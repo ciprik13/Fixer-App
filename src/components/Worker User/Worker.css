@@ -1,0 +1,185 @@
+.worker-profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;  
+}
+
+.column {
+    flex: 1;          
+    min-width: 0;     
+    max-width: 48%;  
+    box-sizing: border-box;  
+}
+
+#border{
+    border-left: 2px solid #6c63ff;
+    padding-left: 30px;
+}
+    
+
+.hide {
+    display: none;
+}
+
+
+.valid {
+    color: green;
+    margin-left: 8px;
+}
+
+.errmsg{
+    color:red;
+    text-align: center;
+}
+.error{
+    color:red;
+}
+
+.invalid {
+    color: red;
+    margin-left: 8px;
+    margin-bottom:3px;
+}
+
+
+.instructions {
+    color: rgb(53, 53, 53);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.invalid-input {
+    border: 2px solid red;
+}
+
+.edit{
+    margin-top: 5px;
+    background-color:#6c63ff ;
+    margin-right: 10px;
+}
+.delete{
+    background-color:rgb(255, 67, 67) ;
+}
+/* h1 {
+    text-align: center;
+    color: #6c63ff;
+} */
+.title-profile{
+    margin-bottom: 10%;
+}
+#services{
+    margin-top: 30px;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    margin: 0 auto;
+    background-image: url('/public/farmer.png'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.profile-image img {
+    width: 500px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.change-picture-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.worker-info label,
+.services-offered h2,
+.ratings h2 {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.worker-info input,
+.worker-info textarea,
+.services-offered input,
+.ratings input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.update-details-btn,
+.add-service-btn,
+.save-changes-btn,
+.cancel-btn {
+    padding: 10px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.save-changes-btn {
+    background-color: #2ecc71;
+    padding: 15px;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    padding: 15px;
+}
+
+.service-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-list li {
+    margin-bottom: 10px;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.rating{
+    margin-top: 10px;
+}

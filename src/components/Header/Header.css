@@ -1,0 +1,131 @@
+/* Header wrapper */
+.header-wrapper {
+  width: 100%;
+  margin-bottom: 5px;
+  box-shadow: var(--shadow);
+}
+
+/* Header container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+  width: 100%;
+  background-color: var(--background-light);
+}
+
+/* Logo styling */
+.move-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  color: var(--blue);
+  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Centered menu */
+.header-center-menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 2rem;
+  align-items: center;
+  color: black;
+}
+
+.header-center-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem; /* Dimensiune ușor mai mare pentru un aspect profesional */
+  font-weight: 500;
+}
+
+.header-center-menu a:hover {
+  cursor: pointer;
+  color: var(--blue2);
+  transition: color 0.3s ease;
+}
+
+/* Right-aligned buttons */
+.header-right-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button1, .button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--blue2);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 100px;
+}
+
+
+.button1 {
+  background-color: var(--blue);
+}
+
+.button1:hover {
+  background-color: var(--blue2);
+  box-shadow: 0px 4px 10px rgba(0, 91, 187, 0.3);
+}
+
+.button2 {
+  background-color: var(--blue);
+}
+
+.button2:hover {
+  background-color: var(--blue2);
+  box-shadow: 0px 4px 10px rgba(0, 51, 128, 0.3);
+}
+
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+
+  .logo-name {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .header-center-menu {
+    gap: 1rem;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .header-center-menu a {
+    font-size: 1rem; /* Diminuare font pentru mobile */
+  }
+
+  .header-right-buttons {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .button1, .button2 {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
