@@ -16,7 +16,7 @@ const Hero = () => {
 
     const fetchData = async (value) => {
     try {
-        const response = await axios.get("http://3.70.72.246:3001/shareable/search", {
+        const response = await axios.get("http://localhost:3001/shareable/search", {
             params: { service: value, sortOrder },
         });
         console.log(response);
@@ -135,10 +135,10 @@ const Hero = () => {
                 <p className="rating">Rating: {result.workerRating}</p>
             </div>
             <div className="button-container">
-                <button className="button-service profile-button" onClick={() => handleWorkerNameClick(result.workerId, result.serviceId)}>
+                <button className="button-service profile-button search-button" onClick={() => handleWorkerNameClick(result.workerId, result.serviceId)}>
                     View Profile
                 </button>
-                <button className="button-service order-button" onClick={() => handleMakeOrder(result.workerId, result.serviceId)}>
+                <button className="button-service order-button search-button" onClick={() => handleMakeOrder(result.workerId, result.serviceId)}>
                     Make an order
                 </button>
             </div>

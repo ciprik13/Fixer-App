@@ -1,0 +1,125 @@
+/* Container principal */
+.signup-client-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titlu */
+.signup-client-header {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.signup-client-text {
+    font-size: 1.8em;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.signup-client-underline {
+    width: 50px;
+    height: 3px;
+    background-color: var(--blue);
+    margin: 0.5em auto;
+}
+
+/* Input-uri */
+.signup-client-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.signup-client-input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    position: relative;
+    gap: 10px;
+}
+
+.signup-client-input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 1rem;
+    color: var(--blue);
+}
+
+.signup-client-input-group img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Icone de validare */
+.valid {
+    color: green;
+    margin-left: auto;
+}
+
+.invalid {
+    color: red;
+    margin-left: auto;
+}
+
+/* Mesaj de eroare */
+.errmsg {
+    color: red;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Instructiuni */
+.instructions {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: -5px;
+}
+
+/* Buton de submit */
+.signup-client-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-client-submit {
+    background-color: var(--blue);
+    color: white;
+    padding: 0.8em 2em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: none;
+}
+
+.signup-client-submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.signup-client-submit:hover:not(:disabled) {
+    background-color: var(--blue2);
+    box-shadow: 0px 4px 10px rgba(106, 27, 154, 0.3);
+}
+
+/* Responsivitate */
+@media (max-width: 600px) {
+    .signup-client-container {
+        padding: 1.5em;
+    }
+    .signup-client-text {
+        font-size: 1.6em;
+    }
+}

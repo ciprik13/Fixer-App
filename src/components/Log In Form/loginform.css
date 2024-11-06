@@ -25,7 +25,7 @@
 }
 
 
-input {
+input-2 {
     background-color: white;
     height: 2.5em;
     border: 1px solid var(--blue);
@@ -35,7 +35,6 @@ input {
     flex-shrink: 0; 
     width: 100%; 
     box-sizing: border-box; 
-
 }
 
 

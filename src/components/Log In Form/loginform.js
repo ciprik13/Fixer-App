@@ -8,7 +8,7 @@ import clientApi from "axios";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const LOGIN_CLIENT_URL = 'http://3.70.72.246:3001/auth/login';
+const LOGIN_CLIENT_URL = 'http://localhost:3001/auth/login';
 
 const LogInClient = () => {
     const { setAuth } = useContext(AuthContext);
@@ -84,14 +84,14 @@ const LogInClient = () => {
                         <form className="form-container-sign" onSubmit={handleSubmit}>
                             <p ref={errRef} className={errMsg ? 'errmsg' : "offscreen"} aria-live="assertive">{errMsg}</p>
                             <div className="form-group">
-                                <label htmlFor="email" className="description-field-admin">Email</label>
+                                <label htmlFor="email" className="description-field-admin">Email:</label>
                                 <input
                                     id="email"
                                     ref={userRef}
                                     required
                                     autoComplete="on"
                                     onChange={(e) => setEmail(e.target.value)}
-                                    className="main-font input-admin"
+                                    className="main-font input-admin input-2"
                                     value={email}
                                     type="text"
                                     placeholder="" />
@@ -104,7 +104,7 @@ const LogInClient = () => {
                                 </label>
                                 <input
                                     id="password"
-                                    className="main-font input-admin"
+                                    className="main-font input-admin input-2"
                                     type={visible ? "text" : "password"}
                                     placeholder=""
                                     required

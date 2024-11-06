@@ -7,7 +7,7 @@ import SignUpWorker from './components/Sign Up Worker/signup_worker';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Hero from './components/Hero/Hero.js'
-import Contact from "./components/Contact/Contact";
+// import Contact from "./components/Contact/Contact";
 import LogInAdmin from './components/AdminLogin/adminlogin';
 import LogInClient from './components/Log In Form/loginform';
 import UserManagement from './components/Admin User Worker/AdminWorkerManagement';
@@ -33,6 +33,12 @@ import UserCalendarCreateOrder from './components/User Calendar/UserCalendarCrea
 import ClientProfile from './components/Client Profile/ClientProfile';
 import Rating from './components/Review/Review';
 
+import LoginExampleClient from './components/Login Example Client/LoginExampleClient';
+import LoginExampleWorker from './components/Login Example Worker/LoginExampleWorker';
+
+import SignupExampleClient from './components/Signup Example Client/SignupExampleClient';
+import SignupExampleWorker from './components/Signup Example Worker/SignupExampleWorker';
+
 function App() {
   return (
       <Router>
@@ -44,7 +50,15 @@ function App() {
               <Route path="/" element={<Hero />} />
               <Route path="/choose" element={<ChooseRole />} />
               <Route path="/chooselogin" element={<ChooseLogin />} />
-              <Route path="/contact" element={<Contact />} />
+
+              <Route path="/loginexampleclient" element={<LoginExampleClient />} />
+              <Route path="/loginexampleworker" element={<LoginExampleWorker />} />
+              <Route path="/signupexampleclient" element={<SignupExampleClient />} />
+              <Route path="/signupexampleworker" element={<SignupExampleWorker />} />
+              {/* <Route path="/user/calendar/example" element={<UserCalendarExample />} /> */}
+
+
+              {/* <Route path="/contact" element={<Contact />} /> */}
               <Route path="/loginclient" element={<LogInClient />} />
               <Route path="/loginworker" element={<LogInWorker />} />
               <Route path="/signupclient" element={<SignUpClient />} />

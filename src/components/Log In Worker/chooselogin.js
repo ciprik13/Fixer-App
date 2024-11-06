@@ -13,7 +13,7 @@ const ChooseLogin = () =>{
     };
 
     return(
-    <div className="cover-2 container main-font">
+    <div className="cover-2 container-role main-font">
     <h1 className="titlu">Choose your role:</h1>
 
     <div className="option-cards">
@@ -50,7 +50,7 @@ const ChooseLogin = () =>{
         </label>
     </div>
 
-    <Link to={role === "client" ? "/loginclient" : role === "worker" ? "/loginworker" : "#"}>
+    <Link to={role === "client" ? "/loginexampleclient" : role === "worker" ? "/loginexampleworker" : "#"}>
                 <button className="create-account-btn" disabled={!role}>
                     Log In
                 </button>

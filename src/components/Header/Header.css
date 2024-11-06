@@ -36,11 +36,11 @@
   flex-grow: 1;
   gap: 2rem;
   align-items: center;
-  color: black;
+  color: var(--blue2);
 }
 
 .header-center-menu a {
-  color: black;
+  color: var(--blue2);
   text-decoration: none;
   font-size: 1.1rem; /* Dimensiune ușor mai mare pentru un aspect profesional */
   font-weight: 500;
@@ -48,7 +48,7 @@
 
 .header-center-menu a:hover {
   cursor: pointer;
-  color: var(--blue2);
+  color: var(--blue);
   transition: color 0.3s ease;
 }
 
