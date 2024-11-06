@@ -1,10 +1,10 @@
-import "./AdminLogIn.css";
+import "./adminlogin.css";
 import React, { useState, useRef, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";  
 import AuthContext from "../../context/AuthProvider"; 
 import adminApi from "axios";
 
-const LOGIN_ADMIN_URL = 'http://3.70.72.246:3001/auth/admin/login';
+const LOGIN_ADMIN_URL = 'http://localhost:3001/auth/admin/login';
 
 const LogInAdmin = () => {
     const { setAuth } = useContext(AuthContext);  

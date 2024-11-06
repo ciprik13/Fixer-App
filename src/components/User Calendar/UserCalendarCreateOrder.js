@@ -25,7 +25,7 @@ const UserCalendarCreateOrder = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://3.70.72.246:3001/user/orders/${userId}`);
+        const response = await axios.get(`http://localhost:3001/user/orders/${userId}`);
         const orders = response.data
           .filter(order => order.status !== 'Declined') 
           .map(order => ({
@@ -52,7 +52,7 @@ const UserCalendarCreateOrder = () => {
   const checkAvailability = async (start) => {
     try {
       const availabilityResponse = await axios.post(
-        `http://3.70.72.246:3001/user/worker/availability/${workerId}`,
+        `http://localhost:3001/user/worker/availability/${workerId}`,
         { date: new Date(start).toISOString() }
       );
       return availabilityResponse.data.available;
@@ -87,7 +87,7 @@ const UserCalendarCreateOrder = () => {
         }
 
         // Fetch user data using the /user/:userId API
-        const userResponse = await axios.get(`http://3.70.72.246:3001/user/${userId}`);
+        const userResponse = await axios.get(`http://localhost:3001/user/${userId}`);
         const userData = userResponse.data;
         const userContact = userData.contact || "+37368126027"; // Replace with actual contact
         
@@ -101,7 +101,7 @@ const UserCalendarCreateOrder = () => {
           description: newEvent.title,
         };
 
-        const response = await axios.post(`http://3.70.72.246:3001/user/create-order`, orderData);
+        const response = await axios.post(`http://localhost:3001/user/create-order`, orderData);
         console.log("Order created successfully:", response.data);
 
         // Update events state
