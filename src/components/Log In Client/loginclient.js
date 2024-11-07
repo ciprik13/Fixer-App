@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
-import "./LoginExampleWorker.css";
+import "./loginclient.css";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AuthContext from "../../context/AuthProvider";
@@ -77,7 +77,7 @@ const LoginExample = () => {
             ) : (
                 <div className="login-example-container">
                     <div className="login-example-header">
-                        <div className="login-example-text">Login Worker</div>
+                        <div className="login-example-text">Login Client</div>
                         <div className="login-example-underline"></div>
                     </div>
                     <form onSubmit={handleSubmit} className="login-example-inputs">

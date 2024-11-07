@@ -1,181 +1,132 @@
-/* body {
-    margin: 0;
-    box-sizing: border-box;
-} */
-
-.title-login{
-    color: rgb(105,127,249);
-    font-size: 2em;
-    margin-bottom: 0.5em;
+/* Container principal */
+.login-example-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Titlu */
+.login-example-header {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
 
-.cover-login{
-    width: 25em;
-    height: 25em;
-    position: relative;
-    border-radius: 2em;
-    border: 0.15em solid var(--blue);
+.login-example-text {
+    font-size: 1.8em;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.login-example-underline {
+    width: 50px;
+    height: 3px;
+    background-color: var(--blue);
+    margin: 0.5em auto;
+}
+
+/* Input-uri */
+.login-example-inputs {
     display: flex;
     flex-direction: column;
+    gap: 1em;
+}
+
+.login-example-input1 {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 2em 1em;
-    margin: auto;
-}
-.input-login{
-    background-color: white;
-    font-size: 1.2em;
-    height: 1em;
-    border: 1px solid var(--blue);
-    padding: 0.2em;
-    margin-top: 0.1em;
-    border-radius: 0.15em;
-    flex-shrink: 0;
-    width:100%;
-    box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+    position: relative;
+    gap: 10px;
 }
 
-.login-btn-worker{
-    background-color: var(--blue2);
-    font-size: 0.8em;
-    color: white;
-    width:9em;
-    margin-top: 2em;
+.login-example-input1 img {
+    width: 24px;
+    height: 20px;
+    /* margin-right: 10px; */
+}
+
+.login-example-input1 input {
     border: none;
-    border-radius: 0.5em;
-    padding: 0.8em 1.5em;
-    cursor: pointer;
-    font-family: inherit;
-    text-align: center; 
-    margin-left: 9.5em;
-}
-
-.forgot-password {
-    text-decoration: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 1rem;
     color: var(--blue);
-    font-size: 0.5em;
-    cursor: pointer;
-    border: none;
-    border-radius: 0.5em;
-    padding: 0.8em 1.5em;
-    cursor: pointer;
-    font-family: inherit;
-    background-color: none;
-}
-.fgtpass-btn{
-    margin-top: 0.2em;
-    width: 80%;
-    color: rgb(53, 53, 53);
-    background: none;
-    font-size: 0.7em;
-    cursor: pointer;
 }
 
-/* button {
-    border: none;
-    border-radius: 0.5em;
-    padding: 0.8em 1.5em;
+.eye-icon {
+    position: absolute;
+    right: 10px;
     cursor: pointer;
-    font-size: 1em;
-    font-family: inherit;
-} */
+    color: var(--blue);
+}
 
-.login-btn {
+/* Mesaj de eroare */
+.errmsg {
+    color: red;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Parola uitată */
+.login-example-forgot-password {
+    text-align: center;
+    font-size: 0.9em;
+    color: #797979;
+    /* margin-bottom: 1.5em; */
+}
+
+.login-example-forgot-password span {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--blue);
+}
+
+/* Buton de submit */
+.login-example-submit-container {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1em; */
+}
+
+.login-example-submit {
     background-color: var(--blue);
     color: white;
-    width:10em;
-}
-
-.signup-btn {
-    width: 10em;
-    color:rgb(53,53,53);
-    background: none;
-    font-size: 0.8em;
+    padding: 0.8em 2em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    margin-top: 0.5em;
+    border: none;
 }
 
-.alt-login {
-    width: 80%;
-    height: 3em;
-    display: flex;
-    justify-content: space-around;
-}
-.errmsg{
-    color:red;
-    text-align: center;
-    
-}
-.alt-login div {
-    width: 45%;
-    height: 90%;
-    border-radius: 0.25em;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+.login-example-submit:hover {
+    background-color: var(--blue2);
+    box-shadow: 0px 4px 10px rgba(106, 27, 154, 0.3);
 }
 
-.description-field{
-    color: rgb(53, 53, 53);
-    font-size: 0.95em;
-    margin-bottom: 0.08em;
-    margin-top: 0.5em;
-}
-@media(max-width: 690px){
-    .cover{
-        width:25em;
+/* Responsivitate */
+@media (max-width: 600px) {
+    .login-example-container {
+        padding: 1.5em;
     }
-}
-
-@media(max-width: 445px) {
-    .cover {
-        width: 18em;
+    .login-example-text {
+        font-size: 1.6em;
     }
-    .title{
-        font-size: 2.3em;
+    .login-example-input1 img {
+        width: 18px;
+        height: 18px;
     }
-    input {
-            width: 93%;
-            padding: 0.5em;
-            margin-top: 0.2em;
-            border-radius: 0.15em;
-        }
-    .description-field {
-            color: rgb(53, 53, 53);
-            font-size: 0.85em;
-            margin-bottom: 0.08em;
-            margin-top: 0.5em;
-        }
-    .forgot-password {
-            text-decoration: none;
-            color: rgb(198, 153, 254);
-            font-size: 0.7em;
-            cursor: pointer;
-        }
-    
-    .fgtpass-btn {
-            margin-top: 0.09em;
-        }
-    .login-btn {
-            background-color: var(--blue);
-            color: white;
-            width: 7em;
-            font-size: 0.8em;
-        }
-    .signup-btn {
-            width: 80%;
-            color: rgb(53, 53, 53);
-            background: none;
-            font-size: 0.7em;
-            cursor: pointer;
-        }
-    .cover {
-            height: 30em;
-            position: relative;
-            padding-bottom: 1.2em;
-        }
+    .login-example-submit {
+        font-size: 0.9rem;
+    }
 }

@@ -50,7 +50,7 @@ const ChooseLogin = () =>{
         </label>
     </div>
 
-    <Link to={role === "client" ? "/loginexampleclient" : role === "worker" ? "/loginexampleworker" : "#"}>
+    <Link to={role === "client" ? "/loginclient" : role === "worker" ? "/loginworker" : "#"}>
                 <button className="create-account-btn" disabled={!role}>
                     Log In
                 </button>
